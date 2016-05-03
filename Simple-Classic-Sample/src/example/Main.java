@@ -1,26 +1,27 @@
-package sbt.example;
+package example;
 
 import javafx.application.Application;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
 import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
-
-public class HelloWorld extends Application {
+public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(evt -> System.out.println("Hello World!"));
+        Button btn = new Button("Press me...");
+        btn.setOnAction(evt -> {
+            System.out.println("Clicked!");
+            btn.setText("Hello World!");
+        });
 
         StackPane root = new StackPane();
         root.getChildren().add(btn);
 
         Scene scene = new Scene(root, 300, 250);
 
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Hello World Sample");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -28,4 +29,5 @@ public class HelloWorld extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }

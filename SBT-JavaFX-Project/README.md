@@ -1,11 +1,12 @@
-If project can't see JavaFX library, try this code in `build.sbt`:
-
-Важно: должна быть верно установлена системная переменная `JAVA_HOME`
+Если проект по какой-то причине не видит библиотеку JavaFX, то в файле `build.sbt` следует явно прописать:
 
 ```
 //Add Javafx8 library
 unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar"))
 ```
+
+Важно: должна быть верно установлена системная переменная `JAVA_HOME`
+
 
 Так же в сети было найдено более развёрнутое решение:
 ```
@@ -31,6 +32,8 @@ javaHome := {
   Some(dir)  // 'sbt' 'javaHome' value is ': Option[java.io.File]'
 }
 ```
+
+Далее в `build.sbt` следует написать:
 
 ```
 //---
