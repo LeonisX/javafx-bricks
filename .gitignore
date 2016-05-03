@@ -1,3 +1,7 @@
+.idea
+*.iml
+production
+
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -10,3 +14,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/javafx-samples-2.2.80/src/Ensemble/nbproject/private/
+/javafx-samples-2.2.80/src/DataApp/DataAppClient/nbproject/private/
+/javafx-samples-2.2.80/src/BrickBreaker/nbproject/private/
+/javafx-samples-2.2.80/src/DataApp/DataAppLibrary/nbproject/private/
+/javafx-samples-2.2.80/src/FXML-LoginDemo/nbproject/private/
+/javafx-samples-2.2.80/src/DataApp/DataAppPreloader/nbproject/private/
+/javafx-samples-2.2.80/src/SwingInterop/nbproject/private/
+/javafx-samples-2.2.80/src/DataApp/DataAppLoader/nbproject/private/
+/javafx-samples-2.2.80/src/SwingInterop/build/
